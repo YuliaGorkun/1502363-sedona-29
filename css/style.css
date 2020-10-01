@@ -42,7 +42,7 @@ img {
 }
 
 /* Main navigation */
-.visually-hidden{
+.visually-hidden {
   display: none;
 }
 
@@ -128,7 +128,7 @@ img {
 .contacts-social ul {
   list-style: none;
 }
-.social-list{
+.social-list {
   display: flex;
   flex-direction: row;
   align-content: center;
@@ -136,19 +136,21 @@ img {
 
 }
 .button-tw {
-  padding: 17px 14px 16px 15px;
+  padding: 15px;
   margin-right: 6px;
 }
 .button-fb {
-  padding: 13px 17px 13px 17px;
+  padding: 13px 17px;
   margin-right: 6px;
 }
 .button-yt {
-  padding: 16px 13px 16px 13px;
+  padding: 16px 13px;
 }
 
 .contacts-social a {
   background: var(--basic-blue);
+  display: flex;
+  align-items: center;
 }
 .contacts-social a:hover {
   background: var(--basic-hover-blue);
@@ -188,10 +190,7 @@ img {
   color: var(--basic-black);
 }
 .rating {
-  padding-bottom: 3px;
-  padding-top: 3px;
-  padding-left: 15px;
-  padding-right: 12px;
+  padding: 3px 12px 15px;
   background-color: var(--basic-light-gray);
   width: 110px;
   line-height: 21px;
@@ -265,7 +264,7 @@ img {
   color: var(--basic-blue);
 }
 
-.catalog-item-description a:focus{
+.catalog-item-description a:focus {
   opacity: 0.3;
 }
 
@@ -292,7 +291,6 @@ img {
   background-color: var(--basic-focus-blue);
   color: var(--basic-white);
   opacity: 0.3;
-
 }
 
 .button-reservation {
