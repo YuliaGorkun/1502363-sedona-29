@@ -7,7 +7,7 @@
   --basic-focus-blue: #5496BD;
   --basic-gray: #EEEEEE;
   --basic-light-gray: #F2F2F2;
-  --basic-special-gray: #CACACA;
+  --basic-special-gray: #666666;
   --basic-input-gray: #EBEBEB;
   --basic-dark-gray: #766357;
   --basic-hover-gray: #604E43;
@@ -128,6 +128,24 @@ img {
 .contacts-social ul {
   list-style: none;
 }
+.social-list{
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: flex-start;
+
+}
+.button-tw {
+  padding: 17px 14px 16px 15px;
+  margin-right: 6px;
+}
+.button-fb {
+  padding: 13px 17px 13px 17px;
+  margin-right: 6px;
+}
+.button-yt {
+  padding: 16px 13px 16px 13px;
+}
 
 .contacts-social a {
   background: var(--basic-blue);
@@ -143,16 +161,42 @@ img {
 }
 
 
-
 /*Hotels*/
 
 /*filter*/
 
 .filter {
   background-image: url(../img/filter.jpg);
+  background-size: 100%;
   background-repeat: no-repeat;
-  width: 100%;
   color: var(--basic-white);
+}
+.filter-form {
+  display: flex;
+  flex-direction: row;
+}
+.filter-button {
+  color: var(--basic-white);
+  text-transform: uppercase;
+  padding: 7px 35px 8px 36px;
+  border-color: var(--basic-white);
+  background-color: transparent;
+  display: block;
+}
+.filter-button:hover {
+  background-color: var(--basic-white);
+  color: var(--basic-black);
+}
+.rating {
+  padding-bottom: 3px;
+  padding-top: 3px;
+  padding-left: 15px;
+  padding-right: 12px;
+  background-color: var(--basic-light-gray);
+  width: 110px;
+  line-height: 21px;
+  text-align: center;
+  color: var(--basic-special-gray);
 }
 
 .results h2 {
@@ -170,26 +214,45 @@ img {
   list-style: none;
 }
 
-.sorting-criteria-item a {
+.sorting-criteria-item {
   font-size: 12px;
   line-height: 18px;
   list-style: none;
   color: var(--basic-black);
   opacity: 0.3;
+  border-bottom: 1px dashed #81B3D2;
 }
 
-.sorting-criteria-item a:focus {
+.sorting-criteria-item:focus {
   color: var(--basic-black);
   opacity: 1;
+  border: none;
 }
 
-.sorting-criteria-item a:active,
-.sorting-criteria-item a:hover {
+.sorting-criteria-item:active,
+.sorting-criteria-item:hover {
   color: var(--basic-blue);
-  opacity: 1;
+}
+
+.sorting-criteria-up:hover,
+.sorting-criteria-down:hover {
+  color: var(--basic-black);
+}
+
+.sorting-criteria-up:focus {
+  color: var(--basic-blue);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.sorting-criteria-down:focus,
+.sorting-criteria-down:active {
+  color: var(--basic-blue);
 }
 
 /*catalog*/
+.catalog-list {
+  list-style: none;
+}
 
 .catalog-item-description a {
   font-weight: bold;
@@ -220,6 +283,7 @@ img {
   color: var(--basic-white);
   width: 110px;
   height: 27px;
+  border: none;
 }
 .button-details:hover {
   background-color: var(--basic-hover-blue);
@@ -239,6 +303,7 @@ img {
   font-size: 14px;
   line-height: 21px;
   color: var(--basic-white);
+  border: none;
 }
 .button-reservation:hover {
   background-color: var(--basic-hover-gray);

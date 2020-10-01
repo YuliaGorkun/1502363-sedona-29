@@ -19,7 +19,7 @@
         </li>
         <li>
           <a class="main-header-logo" href="index.html">
-            <img src="https://via.placeholder.com"  width="138" height="70" alt="Логотип Sedona"/>
+            <img src="img/logo.svg"  width="138" height="70" alt="Логотип Sedona"/>
           </a>
         </li>
         <li>
@@ -34,7 +34,7 @@
   <main>
     <section class="filter">
       <h1 class="visually-hidden">Фильтр товаров</h1>
-      <form action="blank.html" method="post">
+      <form class="filter-form" action="blank.html" method="post">
         <fieldset>
           <legend>Инфраструктура</legend>
           <ul>
@@ -54,92 +54,92 @@
         <fieldset>
           <legend>Стоимость в сутки (P):</legend>
         </fieldset>
-        <button class="submit">Показать</button>
+        <button class="filter-button">Показать</button>
       </form>
     </section>
-    <section>
+    <section class="results">
       <h2>Найдено:</h2>
-      <p>Сортировка:</p>
-      <ul>
+      <p class="results-sorting">Сортировка:</p>
+      <ul class="sorting-criteria">
         <li>
-          <a href="blank.html">По цене</a>
+          <a class="sorting-criteria-item" href="blank.html">По цене</a>
         </li>
         <li>
-          <a href="blank.html">По типу</a>
+          <a class="sorting-criteria-item" href="blank.html">По типу</a>
         </li>
         <li>
-          <a href="blank.html">По рейтингу</a>
+          <a class="sorting-criteria-item" href="blank.html">По рейтингу</a>
         </li>
         <li>
-          <a href="blank.html"> <img src="https://via.placeholder.com" width="11" height="10" alt="вверх"/></a>
+          <a class="sorting-criteria-up" href="blank.html"> <img src="img/up.svg" width="11" height="10" alt="вверх"/></a>
         </li>
         <li>
-          <a href="blank.html"> <img src="https://via.placeholder.com" width="11" height="10" alt="вниз"/></a>
+          <a class="sorting-criteria-down" href="blank.html"> <img src="img/down.svg" width="11" height="10" alt="вниз"/></a>
         </li>
       </ul>
     </section>
-    <section>
+    <section class="catalog">
       <h3 class="visually-hidden">Каталог</h3>
-      <ul>
+      <ul class="catalog-list">
         <li>
           <p>
-            <img src="https://via.placeholder.com" width="135" height="90" alt="Amara Resort & Spa"/>
+            <img src="img/amara.jpg" width="135" height="90" alt="Amara Resort & Spa"/>
           </p>
-          <div>
-            <h4>Amara Resort & Spa</h4>
+          <div class="catalog-item-description">
+            <a>Amara Resort & Spa</a>
             <p>Гостиница</p>
             <p>От 4000 Р.</p>
-            <button>Подробнее</button>
-            <button>Забронировать</button>
+            <button class="button-details">Подробнее</button>
+            <button class="button-reservation">Забронировать</button>
           </div>
           <div>
             <p>
-              <img src="https://via.placeholder.com" width="19" height="17" alt="Звезда"/>
-              <img src="https://via.placeholder.com" width="19" height="17" alt="Звезда"/>
-              <img src="https://via.placeholder.com" width="19" height="17" alt="Звезда"/>
-              <img src="https://via.placeholder.com" width="19" height="17" alt="Звезда"/>
-              <img src="https://via.placeholder.com" width="19" height="17" alt="Звезда"/>
+              <img src="img/star.svg" width="19" height="17" alt="Звезда"/>
+              <img src="img/star.svg" width="19" height="17" alt="Звезда"/>
+              <img src="img/star.svg" width="19" height="17" alt="Звезда"/>
+              <img src="img/star.svg" width="19" height="17" alt="Звезда"/>
+              <img src="img/star.svg" width="19" height="17" alt="Звезда"/>
             </p>
-            <p>Рейтинг: 8,5</p>
+            <p class="rating">Рейтинг: 8,5</p>
           </div>
         </li>
         <li>
           <p>
-            <img src="https://via.placeholder.com" width="135" height="90" alt="Desert Quail Inn"/>
+            <img src="img/desert.jpg" width="135" height="90" alt="Desert Quail Inn"/>
           </p>
           <div>
             <h4>Desert Quail Inn</h4>
             <p>Мотель</p>
             <p>От 3000 Р.</p>
-            <button>Подробнее</button>
-            <button>Забронировать</button>
+            <button class="button-details">Подробнее</button>
+            <button class="button-reservation">Забронировать</button>
           </div>
           <div>
             <p>
-              <img src="https://via.placeholder.com" width="19" height="17" alt="Звезда"/>
-              <img src="https://via.placeholder.com" width="19" height="17" alt="Звезда"/>
-              <img src="https://via.placeholder.com" width="19" height="17" alt="Звезда"/>
+              <img src="img/star.svg" width="19" height="17" alt="Звезда"/>
+              <img src="img/star.svg" width="19" height="17" alt="Звезда"/>
+              <img src="img/star.svg" width="19" height="17" alt="Звезда"/>
             </p>
-            <p>Рейтинг: 8,9</p>
+            <p class="rating">Рейтинг: 8,9</p>
           </div>
         </li>
         <li>
           <p>
-            <img src="https://via.placeholder.com" width="135" height="90" alt="Villas at Poco Diablo"/>
+            <img src="img/villas.jpg" width="135" height="90" alt="Villas at Poco Diablo"/>
           </p>
           <div>
             <h4>Villas at Poco Diablo</h4>
             <p>Апартаменты</p>
             <p>От 2000 Р.</p>
-            <button>Подробнее</button>
-            <button>Забронировать</button>
+            <button class="button-details">Подробнее</button>
+            <button class="button-reservation">Забронировать</button>
           </div>
           <div>
             <p>
-              <img src="https://via.placeholder.com" width="19" height="17" alt="Звезда"/>
-              <img src="https://via.placeholder.com" width="19" height="17" alt="Звезда"/>
+              <img src="img/star.svg" width="19" height="17" alt="Звезда"/>
+              <img src="img/star.svg" width="19" height="17" alt="Звезда"/>
             </p>
-            <p>Рейтинг: 9,2</p>
+            <p class="rating">Рейтинг: 9,2</p>
           </div>
         </li>
       </ul>
@@ -153,27 +153,27 @@
         <a class="contacts-phone" href="tel:+74956660166">ТЕЛ: +7(495) 666-01-66</a>
       </div>
       <div class="contacts-social">
-        <ul>
+        <ul class="social-list">
           <li>
-            <a class="button" href="blank.html">
-              <img src="https://via.placeholder.com"  width="46" height="48" alt="twitter"/>
+            <a class="button-tw" href="blank.html">
+              <img src="img/twitter.svg" width="17" height="15" alt="twitter"/>
             </a>
           </li>
           <li>
-            <a class="button" href="blank.html">
-              <img src="https://via.placeholder.com"  width="46" height="48" alt="facebook"/>
+            <a class="button-fb" href="blank.html">
+              <img src="img/fb.svg"  width="12" height="22" alt="facebook"/>
             </a>
           </li>
           <li>
-            <a class="button" href="blank.html">
-              <img src="https://via.placeholder.com"  width="46" height="48" alt="youtube"/>
+            <a class="button-yt" href="blank.html">
+              <img src="img/youtube.svg"  width="20" height="16" alt="youtube"/>
             </a>
           </li>
         </ul>
       </div>
       <div class="contacts-creator">
         <p>Website by</p>
-        <a class="button" href="index.html"><img src="https://via.placeholder.com" width="115" height="41" alt="Логотип Sedona"></a>
+        <a class="button" href="index.html"><img src="img/htmlacademy.svg" width="115" height="41" alt="Логотип Sedona"></a>
       </div>
     </section>
   </footer>
