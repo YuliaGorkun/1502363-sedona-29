@@ -32,31 +32,84 @@
     </nav>
   </header>
   <main>
+
     <section class="filter">
       <h1 class="visually-hidden">Фильтр товаров</h1>
       <form class="filter-form" action="blank.html" method="post">
         <fieldset class="filter-infrastructure">
           <legend>Инфраструктура</legend>
           <ul class="filter-items">
-            <li>Бассейн</li>
-            <li>Парковка</li>
-            <li>WI-FI</li>
+            <li class="features-item filter-option">
+            <input class="filter-input-checkbox visually-hidden"  type="checkbox" name="slider"
+            id="filter-slider" checked>
+              <label for="filter-slider">Бассейн</label>
+            </li>
+            <li class="features-item filter-option">
+              <input class="filter-input-checkbox visually-hidden"  type="checkbox" name="slider"
+              id="filter-slider">
+              <label for="filter-slider">Парковка</label>
+            </li>
+            <li class="features-item filter-option">
+              <input class="filter-input-checkbox visually-hidden"  type="checkbox" name="slider"
+              id="filter-slider">
+              <label for="filter-slider">WiFi</label>
+            </li>
           </ul>
         </fieldset>
         <fieldset class="filter-type">
           <legend>Тип жилья</legend>
           <ul class="filter-items">
-            <li>Гостиница</li>
-            <li>Мотель</li>
-            <li>Апартаменты</li>
+            <li class="features-item filter-option">
+              <input class="visually-hidden filter-input-checkbox "  type="checkbox" name="slider"
+              id="filter-slider" checked>
+              <label for="filter-slider">Гостиница</label>
+            </li>
+            <li class="features-item filter-option">
+              <input class="filter-input-checkbox visually-hidden"  type="checkbox" name="slider"
+              id="filter-slider" checked>
+              <label for="filter-slider">Мотель</label>
+            </li>
+            <li class="features-item filter-option">
+              <input class="filter-input-checkbox visually-hidden"  type="checkbox" name="slider"
+              id="filter-slider" checked>
+              <label for="filter-slider">Апартаменты</label>
+            </li>
           </ul>
         </fieldset>
         <fieldset class="filter-price">
-          <legend>Стоимость в сутки (P):</legend>
-          <button class="filter-button">Показать</button>
-        </fieldset>
-      </form>
+          <form method="get" action="https://echo.htmlacademy.ru">
+  <fieldset class="filter-item">
+      <legend>Стоимость в сутки (P):</legend>
+      <div class="price-controls">
+        <label class="min-price">
+          от <input type="number" name="min-price" value="0">
+        </label>
+        <label class="max-price">
+          до <input type="number" name="max-price" value="15000">
+        </label>
+      </div>
+    </div>
+      <div class="range-filter">
+        <div class="range-controls">
+          <div class="scale">
+            <div class="bar" style="
+              width: 30%;
+              margin-left: 20%
+            "></div>
+          </div>
+          <div class="toggle toggle-min" tabindex="0" style="
+            left: 20%
+          "></div>
+          <div class="toggle toggle-max" tabindex="0" style="
+            left: 50%
+          "></div>
+        </div>
+  </fieldset>
+</form>
+  <button class="filter-button">Показать</button>
     </section>
+
+
     <section class="results">
       <div class="results-items">
       <h2>Найдено: 3</h2>

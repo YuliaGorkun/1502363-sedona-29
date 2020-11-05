@@ -36,6 +36,7 @@
       <h1 class="visually-hidden">Компания Sedona</h1>
       <div class="slogan-picture">
         <img src="img/welcome.svg" width="457" height="351" alt="Sedona"/>
+        <div class="slogan-picture-element"></div>
       </div>
       <div class="slogan-item">
         <h2>Седона — небольшой городок в Аризоне,<br>заслуживающий большего!</h2>
@@ -45,9 +46,13 @@
     <div class="features">
       <ul class="features-list">
         <li class="features-item-1">
-          <h3>Настоящий<br>городок</h3>
-          <p>— №1 —</p>
-          <p>Седона - не аттракцион для туристов, там<br>течёт своя жизнь</p>
+          <div class="item">
+            <h3>Настоящий<br>городок</h3>
+            <p>— №1 —</p>
+            <p>Седона - не аттракцион для туристов, там<br>течёт своя жизнь</p>
+          </div>
+          <div class="features-img1">
+        </div>
         </li>
         <li class="features-item-2">
           <img src="img/icon1.png"  width="75" height="72" alt="Жилье"/>
@@ -65,9 +70,13 @@
           <p>Не только китайского, но и местного<br>производства!</p>
         </li>
         <li class="features-item-1">
-          <h3>Там есть<br>мост дьявола</h3>
-          <p>— №2 —</p>
-          <p>Да, по нему можно пройти! Если конечно<br>вы осмелитесь</p>
+          <div class="features-img2">
+          </div>
+          <div>
+            <h3>Там есть<br>мост дьявола</h3>
+            <p>— №2 —</p>
+            <p>Да, по нему можно пройти! Если конечно<br>вы осмелитесь</p>
+          </div>
         </li>
         <li class="features-item-3">
           <h3>Небольшая площадь</h3>
@@ -86,45 +95,89 @@
         </li>
       </ul>
     </div>
-    <div class="feedback">
-      <h4>Заинтересовались?</h4>
-      <p>Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в седоне</p>
+<div class="feedback">
+  <h4>Заинтересовались?</h4>
+  <p>Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в седоне</p>
+</div>
+<div class="map">
+  <img src="img/map.svg"  width="100%" height="594" alt="Карта"/>
+</div>
+</main>
+<footer>
+  <section class="contacts">
+    <h5 class="visually-hidden">Контакты</h5>
+    <div class="contacts-phone">
+      <p>#VISITSEDONA</p>
+      <a class="contacts-phone" href="tel:+74956660166">ТЕЛ: +7(495) 666-01-66</a>
     </div>
-    <div class="map">
-      <img src="img/map.svg"  width="100%" height="594" alt="Карта"/>
+    <div class="contacts-social">
+      <ul class="social-list">
+        <li>
+          <a class="button-tw" href="blank.html">
+            <img src="img/twitter.svg" width="17" height="15" alt="twitter"/>
+          </a>
+        </li>
+        <li>
+          <a class="button-fb" href="blank.html">
+            <img  src="img/fb.svg"  width="12" height="22" alt="facebook"/>
+          </a>
+        </li>
+        <li>
+          <a class="button-yt" href="blank.html">
+            <img src="img/youtube.svg"  width="20" height="16" alt="youtube"/>
+          </a>
+        </li>
+      </ul>
     </div>
-  </main>
-  <footer>
-    <section class="contacts">
-      <h5 class="visually-hidden">Контакты</h5>
-      <div class="contacts-phone">
-        <p>#VISITSEDONA</p>
-        <a class="contacts-phone" href="tel:+74956660166">ТЕЛ: +7(495) 666-01-66</a>
-      </div>
-      <div class="contacts-social">
-        <ul class="social-list">
-          <li>
-            <a class="button-tw" href="blank.html">
-              <img src="img/twitter.svg" width="17" height="15" alt="twitter"/>
-            </a>
-          </li>
-          <li>
-            <a class="button-fb" href="blank.html">
-              <img  src="img/fb.svg"  width="12" height="22" alt="facebook"/>
-            </a>
-          </li>
-          <li>
-            <a class="button-yt" href="blank.html">
-              <img src="img/youtube.svg"  width="20" height="16" alt="youtube"/>
-            </a>
-          </li>
-        </ul>
-      </div>
-      <div class="contacts-creator">
-        <p>Website by
+    <div class="contacts-creator">
+      <p>Website by
         <a class="button" href="index.html"><img src="img/htmlacademy.svg" width="115" height="41" alt="Логотип Sedona"></a></p>
       </div>
     </section>
   </footer>
+  <section class="serching-modal">
+    <h3>Поиск гостиницы в седоне</h3>
+    <form  class="serching-form" action="http://echo.htmlacademy.ru" method="post">
+      <div class="serching-part">
+        <p class="serching-part-entry">
+          <label for="date-entry">Дата заезда:</label>
+          <input class="entry-input" id="date-entry" type="date" name="date-entry"
+          placeholder="24 апреля 2017">
+        </p>
+        <p class="serching-part-departure">
+          <label for="date-departure">Дата выезда:</label>
+          <input class="departure-input" id="date-departure" type="date" name="date-departure"
+          placeholder="4 июля 2017">
+        </p>
+        <div class="serching-number">
+        <div class="serching-part-adults">
+          <label for="adults">взрослые:</label>
+          <div class="quantity-block1">
+            <button class="quantity-arrow-minus">
+              <img src="img/rectangle.svg" width="12" height="3" alt="минус"/>
+            </button>
+            <input class="quantity-num" type="number" placeholder="2" />
+            <button class="quantity-arrow-minus">
+            <img src="img/union.svg" width="11" height="11" alt="плюс"/>
+             </button>
+          </div>
+        </div>
+        <div class="serching-part-children">
+          <label for="children">Дети:</label>
+          <div class="quantity-block2">
+            <button class="quantity-arrow-minus">
+              <img src="img/rectangle.svg" width="12" height="3" alt="минус"/>
+            </button>
+            <input class="quantity-num" type="number" placeholder="0" />
+            <button class="quantity-arrow-minus">
+            <img src="img/union.svg" width="11" height="11" alt="плюс"/>
+             </button>
+          </div>
+        </div>
+        </div>
+    </form>
+    <button type="button" class="serching-button">Найти</button>
+  </section>
+  <script src="js/letter.js"></script>
 </body>
 </html>
