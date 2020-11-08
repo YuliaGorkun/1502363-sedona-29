@@ -5,12 +5,12 @@
   <title>HTML Academy: Седона</title>
   <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet"/>
   <link rel="stylesheet" href="css/normalize.css"/>
-  <link href="css/style.css" rel="stylesheet"/>
+  <link href="css/style-min.css" rel="stylesheet"/>
 </head>
 <body class="page-body">
   <header class="main-header">
     <div class="main-header-logo main-header-logo-behind">
-      <a href="index.html">
+      <a href="">
         <img src="img/logo.svg"  width="138" height="70" alt="Логотип Sedona"/>
       </a>
     </div>
@@ -102,87 +102,88 @@
       <p>Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в седоне</p>
       <button class="feedback-button modal-close">Поиск гостиницы в седоне</button>
       <section class="searching-modal modal-show">
+        <h4 class="visually-hidden">Поиск гостиницы</h4>
         <form  class="searching-form" action="http://echo.htmlacademy.ru" method="post">
-            <div class="searching-part-entry">
-              <label for="date-entry">Дата заезда:</label>
-              <input class="entry-input" id="date-entry" type="text" name="date-entry"
-              placeholder="24 апреля 2017">
-              <button class="calendar1">
-              </button>
-            </div>
-            <div class="searching-part-departure">
-              <label for="date-departure">Дата выезда:</label>
-              <input class="departure-input" id="date-departure" type="text" name="date-departure"
-              placeholder="4 июля 2017">
-              <button class="calendar2">
-              </button>
-            </div>
-            <div class="searching-number">
-              <div class="searching-part-adults">
-                <label for="adults">взрослые:</label>
-                <div class="quantity-block1">
-                  <button class="quantity-arrow-minus">
-                    <img src="img/rectangle.svg" width="12" height="3" alt="минус"/>
-                  </button>
-                  <input class="quantity-num quantity-adults" type="number" placeholder="2" />
-                  <button class="quantity-arrow-plus">
-                    <img src="img/union.svg" width="11" height="11" alt="плюс"/>
-                  </button>
-                </div>
-              </div>
-              <div class="searching-part-children">
-                <label for="children">Дети:</label>
-                <div class="quantity-block2">
-                  <button class="quantity-arrow-minus">
-                    <img src="img/rectangle.svg" width="12" height="3" alt="минус"/>
-                  </button>
-                  <input class="quantity-num quantity-children" type="number" placeholder="0" />
-                  <button class="quantity-arrow-plus">
-                    <img src="img/union.svg" width="11" height="11" alt="плюс"/>
-                  </button>
-                </div>
+          <div class="searching-part-entry">
+            <label for="date-entry">Дата заезда:</label>
+            <input class="entry-input" id="date-entry" type="text" name="date-entry"
+            placeholder="24 апреля 2017">
+            <button class="calendar1">
+            </button>
+          </div>
+          <div class="searching-part-departure">
+            <label for="date-departure">Дата выезда:</label>
+            <input class="departure-input" id="date-departure" type="text" name="date-departure"
+            placeholder="4 июля 2017">
+            <button class="calendar2">
+            </button>
+          </div>
+          <div class="searching-number">
+            <div class="searching-part-adults">
+              <label for="adults">взрослые:</label>
+              <div class="quantity-block1">
+                <button class="quantity-arrow-minus">
+                  <img src="img/rectangle.svg" width="12" height="3" alt="минус"/>
+                </button>
+                <input class="quantity-num quantity-adults" id="adults" type="number" placeholder="2" />
+                <button class="quantity-arrow-plus">
+                  <img src="img/union.svg" width="11" height="11" alt="плюс"/>
+                </button>
               </div>
             </div>
-              <button type="button" class="searching-button">Найти</button>
-          </form>
-        </section>
-      </div>
-      <div class="map">
-        <img src="img/map.svg"  width="100%" height="594" alt="Карта"/>
-      </div>
-    </main>
-    <footer class="footer-transparent">
-      <section class="contacts">
-        <h5 class="visually-hidden">Контакты</h5>
-        <div class="contacts-phone">
-          <p>#VISITSEDONA</p>
-          <a class="contacts-phone margin5" href="tel:+74956660166">ТЕЛ: +7(495) 666-01-66</a>
-        </div>
-        <div class="contacts-social">
-          <ul class="social-list">
-            <li>
-              <a class="button-tw" href="blank.html">
-                <img src="img/twitter.svg" width="17" height="15" alt="twitter"/>
-              </a>
-            </li>
-            <li>
-              <a class="button-fb" href="blank.html">
-                <img  src="img/fb.svg"  width="12" height="22" alt="facebook"/>
-              </a>
-            </li>
-            <li>
-              <a class="button-yt" href="blank.html">
-                <img src="img/youtube.svg"  width="20" height="16" alt="youtube"/>
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div class="contacts-creator">
-          <p>Website by</p>
-          <a class="htmlacademy" href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/htmlacademy.svg" width="115" height="41" alt="Логотип Htmlacademy"></a>
-        </div>
+            <div class="searching-part-children">
+              <label for="children">Дети:</label>
+              <div class="quantity-block2">
+                <button class="quantity-arrow-minus">
+                  <img src="img/rectangle.svg" width="12" height="3" alt="минус"/>
+                </button>
+                <input class="quantity-num quantity-children" id="children" type="number" placeholder="0" />
+                <button class="quantity-arrow-plus">
+                  <img src="img/union.svg" width="11" height="11" alt="плюс"/>
+                </button>
+              </div>
+            </div>
+          </div>
+          <button type="button" class="searching-button">Найти</button>
+        </form>
       </section>
-    </footer>
-    <script src="js/searching.js"></script>
-  </body>
-  </html>
+    </div>
+    <div class="map">
+      <img src="img/map.svg" height="594" alt="Карта"/>
+    </div>
+  </main>
+  <footer class="footer-transparent">
+    <section class="contacts">
+      <h5 class="visually-hidden">Контакты</h5>
+      <div class="contacts-phone">
+        <p>#VISITSEDONA</p>
+        <a class="contacts-phone margin5" href="tel:+74956660166">ТЕЛ: +7(495) 666-01-66</a>
+      </div>
+      <div class="contacts-social">
+        <ul class="social-list">
+          <li>
+            <a class="button-tw" href="blank.html">
+              <img src="img/twitter.svg" width="17" height="15" alt="twitter"/>
+            </a>
+          </li>
+          <li>
+            <a class="button-fb" href="blank.html">
+              <img  src="img/fb.svg"  width="12" height="22" alt="facebook"/>
+            </a>
+          </li>
+          <li>
+            <a class="button-yt" href="blank.html">
+              <img src="img/youtube.svg"  width="20" height="16" alt="youtube"/>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="contacts-creator">
+        <p>Website by</p>
+        <a class="htmlacademy" href="https://htmlacademy.ru/intensive/htmlcss" target="_blank"><img src="img/htmlacademy.svg" width="115" height="41" alt="Логотип Htmlacademy"></a>
+      </div>
+    </section>
+  </footer>
+  <script src="js/searching.js"></script>
+</body>
+</html>

@@ -23,7 +23,6 @@ body {
   max-width: 1200px;
   margin: auto;
   padding: 0;
-  margin-left, margin-right: 40px;
   padding: 0;
   font-family: 'PT Sans', sans-serif;
   font-size: 14px;
@@ -76,6 +75,7 @@ flex-direction: row;
 align-content: center;
 justify-content: space-between;
 position: relative;
+flex-wrap: wrap;
 }
 
 
@@ -102,16 +102,15 @@ position: relative;
   display: flex;
   justify-content: space-between;
   flex-direction: row;
+  flex-wrap: wrap;
 }
 .site-navigation-part {
   display: flex;
   justify-content: space-between;
   flex-direction: row;
+  flex-wrap: wrap;
 }
 .main-header-logo {
-  /* order: 3;
-  justify-self: center; */
-  /*margin: 0 72px;*/
   margin: auto;
   position: absolute;
   left: 531px;
@@ -154,7 +153,6 @@ position: relative;
   height: 380px;
 }
 .slogan-picture {
-  /*padding: 77px 372px;*/
   text-align: center;
   padding: 70px 0 0;
 }
@@ -202,10 +200,9 @@ position: relative;
 }
 
 .item h3{
-  /*width: 400px;
-  height: 256px;*/
   margin-top: 7px;
 }
+
 .item-part {
   margin-top: 24px;
 }
@@ -313,21 +310,21 @@ margin-bottom: 11px;
   grid-template-columns: repeat(3, 1fr);
   padding-left: 45px;
   padding-right: 55px;
-  padding-top: 10px;
+  padding-top: 28px;
   padding-bottom: 25px;
   background-color: var(--basic-white);
 }
 
-.contacts-hotels
-{
+.contacts-hotels {
   padding-top: 0px;
+  padding-left: 55px;
 }
 .footer-transparent {
   opacity: 0.9;
-position: absolute;
-left: 0;
-bottom: 0;
-width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
 }
 
 .contacts-phone {
@@ -343,7 +340,7 @@ width: 100%;
 .contacts-phone p {
   margin-top: 0;
   margin-bottom: 10px;
-  margin-left: 10px;
+  margin-left: 5px;
 }
 
 .contacts-social ul {
@@ -355,8 +352,7 @@ width: 100%;
   align-content: center;
   justify-content: center;
   padding: 0;
-
-
+  flex-wrap: wrap;
 }
 .button-tw {
   padding: 15.5px 15px;
@@ -374,6 +370,7 @@ width: 100%;
   background: var(--basic-blue);
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
 }
 .contacts-social a:hover {
   background: var(--basic-hover-blue);
@@ -386,6 +383,7 @@ width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
 }
 .contacts-creator p {
   margin-right: 8px;
@@ -405,12 +403,9 @@ width: 100%;
   color: var(--basic-white);
 }
 .filter-form {
-
   display: grid;
   grid-template-columns: min-content min-content min-content;
   padding: 26px 0;
-  align-items:
-
 }
 
 .filter-form legend {
@@ -431,6 +426,8 @@ width: 100%;
 .filter-price {
   margin-left: 320px;
   border: none;
+  padding-top: 0px;
+  padding-left: 15px;
 }
 
 .filter-type {
@@ -464,13 +461,20 @@ width: 100%;
   color: var(--basic-black);
 }
 .rating {
-  padding: 3px 15px;
+  padding: 3px 3px;
   background-color: var(--basic-light-gray);
   width: 110px;
   line-height: 21px;
   text-align: center;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
   color: var(--basic-special-gray);
-
+}
+.margin9 {
+  margin-top: 9px;
 }
 
 .results {
@@ -487,13 +491,14 @@ width: 100%;
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .arrow {
   display: grid;
   grid-template-columns: auto auto;
   grid-column-gap: 12px;
-
+  margin-bottom: -10px;
 }
 .results h2 {
   font-weight: bold;
@@ -567,6 +572,7 @@ width: 100%;
   flex-direction: row;
   align-items:center;
   margin-left: 5px;
+  flex-wrap: wrap;
 }
 
 .description-image p {
@@ -575,15 +581,16 @@ width: 100%;
 
 }
 .margin7 {
-  padding-top: 20px;
+  padding-top: 17px;
 }
 .catalog-item-description {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   padding: 5px 70px 25px;
-  align-items:center;
+  align-items: center;
   border-bottom: 1px solid #E5E5E5;
+  flex-wrap: wrap;
 }
 .amara {
   padding-bottom: 15px;
@@ -630,7 +637,7 @@ width: 100%;
 .stars {
   display: grid;
   grid-auto-rows: 1fr auto;
-  grid-row-gap: 15px;
+  grid-row-gap: 18px;
   align-self: flex-end;
   text-align: right;
 }
@@ -653,7 +660,7 @@ width: 100%;
   background-color: var(--basic-blue);
   color: var(--basic-white);
   border: none;
-  padding: 16px 200px;
+  padding: 16px 195px;
   text-transform: uppercase;
 }
 .button-details:hover,
@@ -669,11 +676,11 @@ width: 100%;
 .button-reservation {
   width: 142px;
   height: 27px;
-  font-family: PT Sans;
-font-style: normal;
-font-weight: bold;
-font-size: 14px;
-line-height: 21px;
+  font-family: 'PT Sans', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 21px;
 }
 
 .feedback-button,
@@ -719,7 +726,7 @@ animation: bounce 0.6s;
 padding-bottom: 0;
 }
 .searching-form {
-  padding: 58px 38px 50px 55px;
+  padding: 55px 38px 50px 55px;
 }
 
 .searching-modal label,
@@ -753,6 +760,7 @@ padding-bottom: 0;
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .searching-part-children {
@@ -760,9 +768,10 @@ padding-bottom: 0;
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
+  flex-wrap: wrap;
 }
 .searching-part-children label {
-padding-right: 28px;
+  padding-right: 28px;
 }
 
 .entry-input,
@@ -774,8 +783,6 @@ padding-right: 28px;
   padding-left: 10px;
   position: relative;
 }
-
-
 
 .searching-part-departure,
 .searching-part-entry {
@@ -794,7 +801,7 @@ padding-right: 28px;
   font-weight: bold;
   font-size: 21px;
   line-height: 26px;
-  font-family: PT Sans;
+  font-family: 'PT Sans', sans-serif;
   background-color: var(--basic-dark-gray);
   color: var(--basic-white);
   padding: 30px 142px;
@@ -830,7 +837,7 @@ padding-right: 28px;
 
 .quantity-arrow-minus {
   background: var(--basic-light-gray);
-  padding: 11px 14px 13px;
+  padding: 11px 12px 13px 14px;
   border: none;
   margin: 0;
 }
@@ -846,18 +853,21 @@ padding-right: 28px;
   flex-direction: row;
   align-content: center;
   margin-bottom: 53px;
+  flex-wrap: wrap;
 }
 .quantity-block1 {
   margin-right: 0px;
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  flex-wrap: wrap;
 }
 .quantity-block2 {
   margin-right: 0px;
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  flex-wrap: wrap;
 }
 .calendar1 {
   position: absolute;
@@ -868,8 +878,8 @@ padding-right: 28px;
   background-repeat: no-repeat;
   width: 21px;
   height: 23px;
-
 }
+
 .calendar1:hover,
 .calendar2:hover {
   background-image: url(../img/calendar-hover.svg);
@@ -881,12 +891,11 @@ padding-right: 28px;
   background-repeat: no-repeat;
   border: none;
 }
-.calendar2
-{
+.calendar2 {
   position: absolute;
   border: none;
   right: 65px;
-  top: 134px;
+  top: 130px;
   background-image: url(../img/calendar.svg);
   background-repeat: no-repeat;
   width: 21px;
@@ -896,7 +905,7 @@ padding-right: 28px;
 /* стоимость */
 .filter-item {
   margin: 0;
-  margin-bottom: 7px;
+  margin-bottom: 9px;
   padding: 0;
   padding-inline-start: 0;
   padding-block-start: 0;
@@ -905,7 +914,6 @@ padding-right: 28px;
   padding-block-end: 0;
   margin-inline-start: 0;
     margin-inline-end: 0;
-    ma
 }
 .range-filter {
   margin-top: 0px;
@@ -920,7 +928,6 @@ padding-right: 28px;
   line-height: 21px;
   text-transform: uppercase;
   margin-bottom: 11px;
-
 }
 
 .range-controls {
@@ -934,7 +941,7 @@ padding-right: 28px;
 }
 
 .range-controls .scale {
-  width: 323px;
+  width: 300px;
   height: 2px;
   background-color: rgba(255, 255, 255, 0.3);
 }
@@ -976,6 +983,7 @@ padding-right: 28px;
   border-radius: 2px;
   background-color: transparent;
   margin-right: 0;
+  flex-wrap: wrap;
 }
 .price-input {
   background: transparent;
@@ -993,13 +1001,17 @@ padding-right: 28px;
   font-size: 16px;
   margin-right: 0;
   padding-right: 0;
-
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
 }
 
 .price-controls input {
   background: transparent;
   border: none;
-  padding: 9px 0;
+  padding: 7px 0;
   text-align: center;
   color: var(--basic-white);
   border: none;
@@ -1010,7 +1022,8 @@ padding-right: 28px;
 
 .min-price {
     margin-right: 0;
-    margin-left: 70px;
+    margin-left: 65px;
+    margin-right: -5px;
 }
 .max-price {
   margin-left: 50px;
@@ -1018,11 +1031,11 @@ padding-right: 28px;
 .price-input-from {
   width: 20px;
   margin-left: 0;
-  margin-right: 50px;
+  margin-right: 53px;
 }
 .price-input-to {
   width: 40px;
-  margin-left: 0;
+  margin-left: -5px;
   margin-right: 0;
 }
 /*инфраструктура*/
@@ -1037,8 +1050,6 @@ padding-right: 28px;
   top: 0;
   width: 23px;
   height: 23px;
-  /*border: 2px solid #FFFFFF;
-  background-color: transparent;*/
   background-image: url(../img/checkbox-off.png);
   background-repeat: no-repeat;
 }
@@ -1113,4 +1124,8 @@ input[type="number"] {
 input[type="number"]:hover,
 input[type="number"]:focus {
 -moz-appearance: number-input;
+}
+
+.map img {
+  width: 100%;
 }

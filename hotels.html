@@ -5,11 +5,11 @@
   <title>HTML Academy: Седона</title>
   <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet"/>
   <link rel="stylesheet" href="css/normalize.css"/>
-  <link href="css/style.css" rel="stylesheet"/>
+  <link href="css/style-min.css" rel="stylesheet"/>
 </head>
 <body class="page-body">
   <header class="main-header">
-    <div class="main-header-logo">
+    <div class="main-header-logo main-header-logo-behind">
       <a href="index.html">
         <img src="img/logo.svg"  width="138" height="70" alt="Логотип Sedona"/>
       </a>
@@ -36,8 +36,6 @@
   <main>
     <section class="filter slogan-picture-position" >
       <h1 class="visually-hidden">Фильтр товаров</h1>
-
-
       <form class="filter-form" action="https://echo.htmlacademy.ru" method="post" style="padding-top: 27px;">
         <fieldset class="filter-infrastructure">
           <legend>Инфраструктура:</legend>
@@ -80,173 +78,173 @@
           </ul>
         </fieldset>
         <fieldset class="filter-price">
-        <fieldset class="filter-item">
-              <legend>Стоимость в сутки (P):</legend>
-              <div class="price-controls">
+          <fieldset class="filter-item">
+            <legend>Стоимость в сутки (P):</legend>
+            <div class="price-controls">
+              <div class="flex">
+                <label for="min-price" class="min-price">
+                  от</label>
+                  <input class="price-input-from" id="min-price" type="text" name="min-price" value="0">
+                </div>
+                <span class="price-item"></span>
                 <div class="flex">
-                  <label class="min-price">
-                    от</label>
-                    <input class="price-input-from" type="text" name="min-price" value="0">
-                  </div>
-                  <span class="price-item"></span>
-                  <div class="flex">
-                    <label class="max-price">
-                      до </label>
-                      <input class="price-input-to" type="text" name="max-price" value="3000">
-                    </div>
-                  </div>
-                  <div class="range-filter">
-                    <div class="range-controls">
-                      <div class="scale">
-                        <div class="bar"></div>
-                      </div>
-                      <div class="toggle toggle-min" tabindex="0" style="
-                      left: 0%">
-                    </div>
-                    <div class="toggle toggle-max" tabindex="0" style="
-                    left: 80%">
+                  <label for="max-price" class="max-price">
+                    до </label>
+                    <input class="price-input-to" type="text" id="max-price" name="max-price" value="3000">
                   </div>
                 </div>
+                <div class="range-filter">
+                  <div class="range-controls">
+                    <div class="scale">
+                      <div class="bar"></div>
+                    </div>
+                    <div class="toggle toggle-min" tabindex="0" style="
+                    left: 0%">
+                  </div>
+                  <div class="toggle toggle-max" tabindex="0" style="
+                  left: 80%">
+                </div>
               </div>
+            </div>
           </fieldset>
           <button class="filter-button">Показать</button>
 
-      </fieldset>
-        </form>
-      </section>
-      <section class="results">
-        <div class="results-items">
-          <h2>Найдено: 3</h2>
-          <ul class="sorting-criteria">
-            <li>
-              <p class="results-sorting">Сортировка:</p>
-            </li>
-            <li>
-              <a class="sorting-criteria-item" href="blank.html">По цене</a>
-            </li>
-            <li>
-              <a class="sorting-criteria-item" href="blank.html">По типу</a>
-            </li>
-            <li>
-              <a class="sorting-criteria-item" href="blank.html">По рейтингу</a>
-            </li>
-          </ul>
-        </div>
-        <div class="arrow">
-          <a class="sorting-criteria-up" href="blank.html"> <img src="img/up.svg" width="11" height="10" alt="вверх"/></a>
-          <a class="sorting-criteria-down" href="blank.html"> <img src="img/down.svg" width="11" height="10" alt="вниз"/></a>
-        </div>
-
-      </section>
-      <section class="catalog">
-        <h3 class="visually-hidden">Каталог</h3>
-        <ul class="catalog-list">
-          <li class="catalog-item-description amara">
-            <div class="description-image ">
-              <p>
-                <img src="img/amara.jpg" width="135" height="90" alt="Amara Resort & Spa"/>
-              </p>
-              <div class="description-option">
-                <a>Amara Resort & Spa</a>
-                <div class="item-description">
-                  <p>Гостиница</p>
-                  <p>От 4000 Р.</p>
-                  <button class="button-details">Подробнее</button>
-                  <button class="button-reservation">Забронировать</button>
-                </div>
-              </div>
-            </div>
-            <div class="stars">
-              <p>
-                <img src="img/star.svg" width="19" height="17" alt="Звезда"/>
-                <img src="img/star.svg" width="19" height="17" alt="Звезда"/>
-                <img src="img/star.svg" width="19" height="17" alt="Звезда"/>
-                <img src="img/star.svg" width="19" height="17" alt="Звезда"/>
-              </p>
-              <p class="rating margin6">Рейтинг: 8,5</p>
-            </div>
+        </fieldset>
+      </form>
+    </section>
+    <section class="results">
+      <div class="results-items">
+        <h2>Найдено: 3</h2>
+        <ul class="sorting-criteria">
+          <li>
+            <p class="results-sorting">Сортировка:</p>
           </li>
-          <li class="catalog-item-description">
-            <div class="description-image margin7">
-              <p>
-                <img src="img/desert.jpg" width="135" height="90" alt="Desert Quail Inn"/>
-              </p>
-              <div class="description-option">
-                <a>Desert Quail Inn</a>
-                <div class="item-description">
-                  <p>Мотель</p>
-                  <p>От 3000 Р.</p>
-                  <button class="button-details">Подробнее</button>
-                  <button class="button-reservation">Забронировать</button>
-                </div>
-              </div>
-            </div>
-            <div class="stars">
-              <p>
-                <img src="img/star.svg" width="19" height="17" alt="Звезда"/>
-                <img src="img/star.svg" width="19" height="17" alt="Звезда"/>
-                <img src="img/star.svg" width="19" height="17" alt="Звезда"/>
-              </p>
-              <p class="rating">Рейтинг: 8,9</p>
-            </div>
+          <li>
+            <a class="sorting-criteria-item" href="blank.html">По цене</a>
           </li>
-          <li class="catalog-item-description">
-            <div class="description-image">
-              <p>
-                <img src="img/villas.jpg" width="135" height="90" alt="Villas at Poco Diablo"/>
-              </p>
-              <div class="description-option margin8">
-                <a>Villas at Poco Diablo</a>
-                <div class="item-description">
-                  <p style="margin-right: 15px;">Апартаменты</p>
-                  <p>От 2000 Р.</p>
-                  <button class="button-details">Подробнее</button>
-                  <button class="button-reservation">Забронировать</button>
-                </div>
-              </div>
-            </div>
-            <div class="stars">
-              <p>
-                <img src="img/star.svg" width="19" height="17" alt="Звезда"/>
-                <img src="img/star.svg" width="19" height="17" alt="Звезда"/>
-              </p>
-              <p class="rating">Рейтинг: 9,2</p>
-            </div>
+          <li>
+            <a class="sorting-criteria-item" href="blank.html">По типу</a>
+          </li>
+          <li>
+            <a class="sorting-criteria-item" href="blank.html">По рейтингу</a>
           </li>
         </ul>
-      </section>
-    </main>
-    <footer>
-      <section class="contacts contacts-hotels">
-        <h5 class="visually-hidden">Контакты</h5>
-        <div class="contacts-phone">
-          <p>#VISITSEDONA</p>
-          <a class="contacts-phone" href="tel:+74956660166">ТЕЛ: +7(495) 666-01-66</a>
-        </div>
-        <div class="contacts-social">
-          <ul class="social-list">
-            <li>
-              <a class="button-tw" href="blank.html">
-                <img src="img/twitter.svg" width="17" height="15" alt="twitter"/>
-              </a>
-            </li>
-            <li>
-              <a class="button-fb" href="blank.html">
-                <img  src="img/fb.svg"  width="12" height="22" alt="facebook"/>
-              </a>
-            </li>
-            <li>
-              <a class="button-yt" href="blank.html">
-                <img src="img/youtube.svg"  width="20" height="16" alt="youtube"/>
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div class="contacts-creator">
-          <p>Website by</p>
-          <a class="htmlacademy" href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/htmlacademy.svg" width="115" height="41" alt="Логотип Htmlacademy"></a>
-        </div>
-      </section>
-    </footer>
-  </body>
-  </html>
+      </div>
+      <div class="arrow">
+        <a class="sorting-criteria-up" href="blank.html"> <img src="img/up.svg" width="11" height="10" alt="вверх"/></a>
+        <a class="sorting-criteria-down" href="blank.html"> <img src="img/down.svg" width="11" height="10" alt="вниз"/></a>
+      </div>
+
+    </section>
+    <section class="catalog">
+      <h3 class="visually-hidden">Каталог</h3>
+      <ul class="catalog-list">
+        <li class="catalog-item-description amara">
+          <div class="description-image ">
+            <p>
+              <img src="img/amara.jpg" width="135" height="90" alt="Amara Resort & Spa"/>
+            </p>
+            <div class="description-option">
+              <a>Amara Resort & Spa</a>
+              <div class="item-description">
+                <p>Гостиница</p>
+                <p>От 4000 Р.</p>
+                <button class="button-details">Подробнее</button>
+                <button class="button-reservation">Забронировать</button>
+              </div>
+            </div>
+          </div>
+          <div class="stars">
+            <p>
+              <img src="img/star.svg" width="19" height="17" alt="Звезда"/>
+              <img src="img/star.svg" width="19" height="17" alt="Звезда"/>
+              <img src="img/star.svg" width="19" height="17" alt="Звезда"/>
+              <img src="img/star.svg" width="19" height="17" alt="Звезда"/>
+            </p>
+            <p class="rating margin6">Рейтинг: 8,5</p>
+          </div>
+        </li>
+        <li class="catalog-item-description">
+          <div class="description-image margin7">
+            <p>
+              <img src="img/desert.jpg" width="135" height="90" alt="Desert Quail Inn"/>
+            </p>
+            <div class="description-option">
+              <a>Desert Quail Inn</a>
+              <div class="item-description">
+                <p>Мотель</p>
+                <p>От 3000 Р.</p>
+                <button class="button-details">Подробнее</button>
+                <button class="button-reservation">Забронировать</button>
+              </div>
+            </div>
+          </div>
+          <div class="stars">
+            <p>
+              <img src="img/star.svg" width="19" height="17" alt="Звезда"/>
+              <img src="img/star.svg" width="19" height="17" alt="Звезда"/>
+              <img src="img/star.svg" width="19" height="17" alt="Звезда"/>
+            </p>
+            <p class="rating margin9">Рейтинг: 8,9</p>
+          </div>
+        </li>
+        <li class="catalog-item-description">
+          <div class="description-image">
+            <p>
+              <img src="img/villas.jpg" style="margin-top: 9px;" width="135" height="90" alt="Villas at Poco Diablo"/>
+            </p>
+            <div class="description-option margin8">
+              <a>Villas at Poco Diablo</a>
+              <div class="item-description">
+                <p style="margin-right: 15px;">Апартаменты</p>
+                <p>От 2000 Р.</p>
+                <button class="button-details">Подробнее</button>
+                <button class="button-reservation">Забронировать</button>
+              </div>
+            </div>
+          </div>
+          <div class="stars">
+            <p>
+              <img src="img/star.svg" width="19" height="17" alt="Звезда"/>
+              <img src="img/star.svg" width="19" height="17" alt="Звезда"/>
+            </p>
+            <p class="rating">Рейтинг: 9,2</p>
+          </div>
+        </li>
+      </ul>
+    </section>
+  </main>
+  <footer>
+    <section class="contacts contacts-hotels">
+      <h5 class="visually-hidden">Контакты</h5>
+      <div class="contacts-phone">
+        <p>#VISITSEDONA</p>
+        <a class="contacts-phone" href="tel:+74956660166">ТЕЛ: +7(495) 666-01-66</a>
+      </div>
+      <div class="contacts-social">
+        <ul class="social-list">
+          <li>
+            <a class="button-tw" href="blank.html">
+              <img src="img/twitter.svg" width="17" height="15" alt="twitter"/>
+            </a>
+          </li>
+          <li>
+            <a class="button-fb" href="blank.html">
+              <img  src="img/fb.svg"  width="12" height="22" alt="facebook"/>
+            </a>
+          </li>
+          <li>
+            <a class="button-yt" href="blank.html">
+              <img src="img/youtube.svg"  width="20" height="16" alt="youtube"/>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="contacts-creator">
+        <p>Website by</p>
+        <a class="htmlacademy" href="https://htmlacademy.ru/intensive/htmlcss" target="_blank"><img src="img/htmlacademy.svg" width="115" height="41" alt="Логотип Htmlacademy"></a>
+      </div>
+    </section>
+  </footer>
+</body>
+</html>
