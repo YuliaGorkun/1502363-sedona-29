@@ -3,6 +3,7 @@ const searchingPopup = document.querySelector(".searching-modal");
 
 searching.addEventListener("click", (evt) => {
   evt.preventDefault();
+
   if (searchingPopup.classList.contains("modal-show")) {
     searchingPopup.classList.remove("modal-show");
     searchingPopup.classList.remove("animation");
